@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 
 function ControlledCarousel() {
@@ -10,31 +12,31 @@ function ControlledCarousel() {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <div>
+      <Carousel activeIndex={index} onSelect={handleSelect}> 
       <Carousel.Item>
         <img className='img-hero' src='/Images/hero 2.webp'/>
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-       <img src='/Images/hero 3.webp'/>
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
+      <img className='img-hero' src='/Images/hero 3.webp'/>
       </Carousel.Item>
       <Carousel.Item>
-        <img src='/Images/hero 4.webp'/>
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
+      <img className='img-hero' src='/Images/hero 4.webp'/>
       </Carousel.Item>
     </Carousel>
+    <div className='box'>
+        <h1 className='hero-h1'>LIVE OUTSIDE THE BOX</h1>
+
+        <Form>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+        <Form.Control type="email" placeholder="name@example.com" />
+      </Form.Group>   
+    </Form>
+    <Button className='btn-sign-up'>Sign-up</Button>
+      </div>
+
+    </div>
+    
   );
 }
 
