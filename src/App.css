@@ -29,3 +29,23 @@
   border-radius: 20px;
   font-weight: bolder;
 }
+.video {
+  text-align: center;
+  margin: 1rem;
+  padding: 20px;
+}
+.company {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 4rem;
+  margin: 3rem 0;
+}
+.logos {
+ width: 200px;
+ height: 100px;
+}
+.row {
+  padding-left: 5%;
+  /* padding-top: 20px; */
+}
